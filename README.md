@@ -24,15 +24,15 @@ dengue fever cases.
 ## Solution Overview
 
 This solution implements a [briefly mention the core model(s) used, e.g.,  
-"gradient boosting model", "deep learning model", "a combination of models"] to 
-predict dengue fever incidence. 
+rnadom forest to predict dengue fever incidence. 
 
 Key components of the solution include:
 
 * **Data Preprocessing:** Handling missing values, feature engineering, and data 
 scaling.
+* **EDA**
 * **Model Training:** Training the chosen model(s) on the historical data.
-* **Model Evaluation:** Evaluating the model's performance using appropriate metrics (e.g., RMSE, MAE).
+* **Model Evaluation:** Evaluating the model's performance using appropriate metrics (MAE).
 * **Prediction Generation:** Generating predictions for the test data.
 
 ## Dependencies
@@ -50,34 +50,12 @@ pip install -r requirements.txt
 
 2. **Navigate to the project directory:**
    ```bash
-   cd dengai
+   cd mini-comp-DSR
    ```
 
 3. **Configure the environment:**
-   [Provide instructions on how to configure any necessary environment variables or 
-API keys.]
-
-4. **Run the prediction script:**
-   ```bash
-   python predict.py --data_path <path_to_data_folder> --output_path 
-<path_to_output_folder>
-   ```
-   [Explain the arguments for the prediction script.]
-
-## Evaluation
-
-The performance of the solution is evaluated using [mention the evaluation metrics 
-used in the competition]. The results are reported in the `results/` directory.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests for bug fixes, 
-feature enhancements, or improvements to the code.
-
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file 
-for details.
+   - create virtual enviroment
+   - install dependencies
 
 ## Authors
 Kasia, Hamed, Sofia
