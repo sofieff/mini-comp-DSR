@@ -1,27 +1,27 @@
-import os
+#import os
 import pandas as pd
 
-# link function .py files from functions/
-from functions.preprocessing import funcitonname, funcitonname
-from functions.mode_train import funcitonname, funcitonname
+from functions.preproc import preprocess_data
+from functions.model_train import get_best_model
 
-def pipeline(
-    features_train_path: str,
-    features_test_path: str,
-    labels_train_path: str,
-
-    ouput_predictions_path: str,
-    ouput_model_path: str,
-
-):
+def main():
 
     """
     Build the pipeline for the dengue DS competition
     """
 
-    print("Pipeline starts")
+    # load the provided data
+    train_features = pd.read_csv(
+    "./data/raw/dengue_features_train.csv", index_col=[0, 1, 2]
+    )
 
-    # load data
+    train_labels = pd.read_csv(
+    "./data/raw/dengue_labels_train.csv", index_col=[0, 1, 2]
+    )
+
+    print("-- Pipeline starts ---")
+
+main()
 
 
 
