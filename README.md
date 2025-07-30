@@ -13,7 +13,7 @@ competition dataset and aims to provide a robust and accurate prediction model.
 
 ## Competition Link
 
-[https://www.drivendata.org/dengai/](https://www.drivendata.org/dengai/)
+[https://www.drivendata.org/dengai/](https://www.drivendata.org/dengai/
 
 ## Dataset
 
@@ -32,31 +32,20 @@ Key components of the solution include:
 * **Data Preprocessing:** Handling missing values, feature engineering, and data 
 scaling.
 * **Model Training:** Training the chosen model(s) on the historical data.
-* **Model Evaluation:** Evaluating the model's performance using appropriate 
-metrics (e.g., RMSE, MAE).
+* **Model Evaluation:** Evaluating the model's performance using appropriate metrics (e.g., RMSE, MAE).
 * **Prediction Generation:** Generating predictions for the test data.
 
 ## Dependencies
 
-* Python 3.7+
-* pandas
-* numpy
-* scikit-learn
-* matplotlib
-* seaborn
-* [List any other specific libraries used, e.g., TensorFlow, PyTorch, etc.]
-
-You can install the dependencies using:
-
-```bash
+You can install the dependencies with:
 pip install -r requirements.txt
-```
+
 
 ## Usage
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/dengai.git
+   git clone https://github.com/sofieff/mini-comp-DSR
    ```
 
 2. **Navigate to the project directory:**
