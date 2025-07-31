@@ -7,3 +7,6 @@ data/
 # Python bytecode files
 __pycache__/
 *.pyc
+
+pyproject.toml
+uv.lock
