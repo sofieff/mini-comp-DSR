@@ -51,7 +51,7 @@ def main():
     submission = pd.read_csv("./data/processed/submission_format.csv", index_col=[0, 1, 2])
 
     submission.total_cases = np.concatenate([sj_predictions, iq_predictions])
-    submission.to_csv("./data/processed/benchmark.csv")
+    submission.to_csv("./data/processed/benchmark_h.csv")
 
 main()
 
