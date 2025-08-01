@@ -13,7 +13,7 @@ def main():
 
     # load the provided data
     train_features = pd.read_csv(
-    "./data/raw/dengue_features_train.csv", index_col=[0, 1, 2]
+    "./data/interim/dengue_train_new_features.csv", index_col=[0, 1, 2]
     )
 
     train_labels = pd.read_csv(
@@ -25,7 +25,7 @@ def main():
     # calling preprocessing
     
     sj_train, iq_train = preprocess_data(
-        "./data/raw/dengue_features_train.csv",
+        "./data/interim/dengue_train_new_features.csv",
         labels_path="./data/raw/dengue_labels_train.csv",
     )
     print("-- preprocessing completed---")
@@ -43,7 +43,7 @@ def main():
     print("-- model testing completed---")
 
     # submission
-    sj_test, iq_test = preprocess_data("./data/raw/dengue_features_test.csv")
+    sj_test, iq_test = preprocess_data("./data/interim/dengue_test_new_features.csv")
 
     sj_predictions = sj_best_model.predict(sj_test).astype(int)
     iq_predictions = iq_best_model.predict(iq_test).astype(int)
@@ -51,7 +51,7 @@ def main():
     submission = pd.read_csv("./data/processed/submission_format.csv", index_col=[0, 1, 2])
 
     submission.total_cases = np.concatenate([sj_predictions, iq_predictions])
-    submission.to_csv("./data/processed/benchmark.csv")
+    submission.to_csv("./data/processed/benchmark_new_features_all.csv")
 
 main()
 
