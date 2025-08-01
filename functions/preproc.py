@@ -1,6 +1,11 @@
 import pandas as pd 
 
 def preprocess_data(data_path, labels_path=None):
+    """
+    preprocess data for dengue dataset
+    """
+
+    
     # load data and set index to city, year, weekofyear
     df = pd.read_csv(data_path, index_col=[0, 1, 2])
 
