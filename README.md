@@ -9,7 +9,7 @@ Status](https://github.com/your-username/dengai/actions/workflows/main.yml/badge
 https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/80/This repository contains a solution for the DengAI competition hosted on 
 DrivenData.org. The goal is to predict the incidence of dengue fever in various 
 regions using historical weather data. This project leverages the DengAI 
-competition dataset and aims to provide a robust and accurate prediction model.
+competition dataset and aims to provide a first exposure to a data sceince problem with software engineering, feature handling and model selection.
 
 ## Competition Link
 
@@ -23,8 +23,7 @@ dengue fever cases.
 
 ## Solution Overview
 
-This solution implements a [briefly mention the core model(s) used, e.g.,  
-rnadom forest to predict dengue fever incidence. 
+This solution implements a among others random forest to predict dengue fever incidence. 
 
 Key components of the solution include:
 
